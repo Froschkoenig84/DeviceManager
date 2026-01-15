@@ -1,0 +1,87 @@
+# ==========================
+# Global
+# ==========================
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ==========================
+# Rider / IDE
+# ==========================
+.idea/
+*.iws
+*.iml
+*.ipr
+*.class
+*.log
+*.tmp
+*.swp
+*.bak
+*.orig
+
+# Rider project files
+*.rider/
+*.idea/
+
+# ==========================
+# Backend - C# / .NET 9.0
+# ==========================
+# Build Folders
+/backend/bin/
+/backend/obj/
+/backend/out/
+/backend/TestResults/
+/backend/*.user
+/backend/*.suo
+/backend/*.userprefs
+/backend/*.DotSettings.user
+/backend/*.DotSettings
+
+# EF Migrations (optional, nur generated files)
+# /backend/Migrations/
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+*.psmdcp
+*.symbols.nupkg
+
+# Visual Studio / Rider
+.vs/
+*.vs/
+*.resharper
+*.ReSharper
+_ReSharper.*
+
+# ==========================
+# Frontend - Angular / Node
+# ==========================
+/frontend/node_modules/
+/frontend/dist/
+/frontend/out-tsc/
+/frontend/.angular/cache/
+/frontend/.angular/build-optimizer/
+
+# Environment
+/frontend/*.env
+/frontend/*.local
+
+# Logs
+/frontend/*.log
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+
+# Temporary
+/frontend/.sass-cache/
