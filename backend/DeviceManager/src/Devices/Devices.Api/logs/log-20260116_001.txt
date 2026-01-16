@@ -1848,3 +1848,814 @@ System.IO.IOException: Failed to bind to address http://127.0.0.1:5280: address 
 2026-01-16 05:14:26.611 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
 2026-01-16 05:14:26.612 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 21.199ms
 2026-01-16 05:16:51.861 +01:00 [INF] Application is shutting down...
+2026-01-16 05:17:29.063 +01:00 [INF] Now listening on: http://localhost:5280
+2026-01-16 05:17:29.108 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-16 05:17:29.111 +01:00 [INF] Hosting environment: Development
+2026-01-16 05:17:29.112 +01:00 [INF] Content root path: D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Api
+2026-01-16 05:21:21.848 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 05:21:21.896 +01:00 [WRN] Failed to determine the https port for redirect.
+2026-01-16 05:21:21.900 +01:00 [INF] CORS policy execution successful.
+2026-01-16 05:21:21.904 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 05:21:21.921 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 05:21:22.022 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 05:21:22.505 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 475.8643ms.
+2026-01-16 05:21:22.517 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 05:21:22.606 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 678.8376ms
+2026-01-16 05:21:22.609 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 05:21:22.615 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 776.1294ms
+2026-01-16 05:21:27.606 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5280/api/devices - null null
+2026-01-16 05:21:27.612 +01:00 [INF] CORS policy execution successful.
+2026-01-16 05:21:27.615 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5280/api/devices - 204 null null 9.651ms
+2026-01-16 05:21:27.621 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5280/api/devices - application/json 1313
+2026-01-16 05:21:27.627 +01:00 [INF] CORS policy execution successful.
+2026-01-16 05:21:27.629 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.CreateDevices (Devices.Api)'
+2026-01-16 05:21:27.640 +01:00 [INF] Route matched with {action = "CreateDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] CreateDevices(System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.CreateDeviceDto]) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 05:21:27.704 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.CreateDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 05:21:27.877 +01:00 [INF] Saved 4 entities to in-memory store.
+2026-01-16 05:21:27.889 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.CreateDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.CreatedResult in 182.6659ms.
+2026-01-16 05:21:27.893 +01:00 [INF] Executing CreatedResult, writing value of type 'Devices.Api.ResponseWrapper.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-16 05:21:27.935 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.CreateDevices (Devices.Api) in 290.9041ms
+2026-01-16 05:21:27.938 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.CreateDevices (Devices.Api)'
+2026-01-16 05:21:27.939 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5280/api/devices - 201 null application/json; charset=utf-8 318.7711ms
+2026-01-16 05:21:27.945 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 05:21:27.950 +01:00 [INF] CORS policy execution successful.
+2026-01-16 05:21:27.951 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 05:21:27.953 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 05:21:27.959 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 05:21:27.982 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 21.2462ms.
+2026-01-16 05:21:27.985 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 05:21:27.990 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 33.7304ms
+2026-01-16 05:21:27.992 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 05:21:27.994 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 49.4549ms
+2026-01-16 05:21:29.895 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 05:21:29.900 +01:00 [INF] CORS policy execution successful.
+2026-01-16 05:21:29.902 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 05:21:29.905 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 05:21:29.909 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 05:21:29.912 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.5507ms.
+2026-01-16 05:21:29.915 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 05:21:29.919 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 10.0024ms
+2026-01-16 05:21:29.921 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 05:21:29.923 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 28.2804ms
+2026-01-16 05:21:31.757 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 05:21:31.762 +01:00 [INF] CORS policy execution successful.
+2026-01-16 05:21:31.764 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:21:31.769 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 05:21:31.773 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 05:21:31.806 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 31.2162ms.
+2026-01-16 05:21:31.810 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 05:21:31.816 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 43.5582ms
+2026-01-16 05:21:31.818 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:21:31.820 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 63.2805ms
+2026-01-16 05:21:42.405 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 05:21:42.409 +01:00 [INF] CORS policy execution successful.
+2026-01-16 05:21:42.410 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:21:42.412 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 05:21:42.416 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 05:21:42.419 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.1106ms.
+2026-01-16 05:21:42.422 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 05:21:42.424 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 8.929ms
+2026-01-16 05:21:42.427 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:21:42.429 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 24.2373ms
+2026-01-16 05:21:43.060 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 05:21:43.065 +01:00 [INF] CORS policy execution successful.
+2026-01-16 05:21:43.067 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:21:43.069 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 05:21:43.072 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 05:21:43.075 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.5874ms.
+2026-01-16 05:21:43.079 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 05:21:43.081 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 9.297ms
+2026-01-16 05:21:43.084 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:21:43.086 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 25.963ms
+2026-01-16 05:21:49.998 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 05:21:50.003 +01:00 [INF] CORS policy execution successful.
+2026-01-16 05:21:50.005 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:21:50.007 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 05:21:50.010 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 05:21:50.013 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.4899ms.
+2026-01-16 05:21:50.016 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 05:21:50.019 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 8.4526ms
+2026-01-16 05:21:50.021 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:21:50.023 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 25.1445ms
+2026-01-16 05:21:50.717 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 05:21:50.722 +01:00 [INF] CORS policy execution successful.
+2026-01-16 05:21:50.723 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:21:50.725 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 05:21:50.729 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 05:21:50.732 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.5529ms.
+2026-01-16 05:21:50.735 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 05:21:50.737 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 8.8069ms
+2026-01-16 05:21:50.740 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:21:50.742 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 24.3297ms
+2026-01-16 05:21:50.878 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 05:21:50.883 +01:00 [INF] CORS policy execution successful.
+2026-01-16 05:21:50.884 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:21:50.886 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 05:21:50.889 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 05:21:50.892 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.5024ms.
+2026-01-16 05:21:50.894 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 05:21:50.897 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 8.0876ms
+2026-01-16 05:21:50.899 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:21:50.901 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 22.9534ms
+2026-01-16 05:22:11.780 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 05:22:11.785 +01:00 [INF] CORS policy execution successful.
+2026-01-16 05:22:11.787 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:22:11.788 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 05:22:11.792 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 05:22:11.795 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.6107ms.
+2026-01-16 05:22:11.798 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 05:22:11.801 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 9.0619ms
+2026-01-16 05:22:11.803 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:22:11.805 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 25.5233ms
+2026-01-16 05:22:12.689 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 05:22:12.694 +01:00 [INF] CORS policy execution successful.
+2026-01-16 05:22:12.695 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:22:12.697 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 05:22:12.700 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 05:22:12.703 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.5199ms.
+2026-01-16 05:22:12.706 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 05:22:12.709 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 8.4364ms
+2026-01-16 05:22:12.711 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:22:12.713 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 23.8546ms
+2026-01-16 05:22:18.188 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 05:22:18.193 +01:00 [INF] CORS policy execution successful.
+2026-01-16 05:22:18.194 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 05:22:18.196 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 05:22:18.200 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 05:22:18.202 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.4434ms.
+2026-01-16 05:22:18.205 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 05:22:18.208 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 8.2237ms
+2026-01-16 05:22:18.210 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 05:22:18.212 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 24.3656ms
+2026-01-16 05:22:29.113 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 05:22:29.118 +01:00 [INF] CORS policy execution successful.
+2026-01-16 05:22:29.120 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:22:29.122 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 05:22:29.126 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 05:22:29.129 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.6222ms.
+2026-01-16 05:22:29.132 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 05:22:29.135 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 8.9105ms
+2026-01-16 05:22:29.137 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:22:29.139 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 25.904ms
+2026-01-16 05:22:30.729 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 05:22:30.734 +01:00 [INF] CORS policy execution successful.
+2026-01-16 05:22:30.735 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:22:30.736 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 05:22:30.740 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 05:22:30.742 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.4339ms.
+2026-01-16 05:22:30.745 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 05:22:30.747 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 7.8609ms
+2026-01-16 05:22:30.750 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:22:30.752 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 22.3485ms
+2026-01-16 05:22:33.834 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 05:22:33.840 +01:00 [INF] CORS policy execution successful.
+2026-01-16 05:22:33.842 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 05:22:33.845 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 05:22:33.849 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 05:22:33.853 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.603ms.
+2026-01-16 05:22:33.857 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 05:22:33.860 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 10.6608ms
+2026-01-16 05:22:33.863 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 05:22:33.865 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 31.4056ms
+2026-01-16 05:22:38.613 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 05:22:38.618 +01:00 [INF] CORS policy execution successful.
+2026-01-16 05:22:38.619 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:22:38.621 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 05:22:38.625 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 05:22:38.627 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.397ms.
+2026-01-16 05:22:38.631 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 05:22:38.633 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 8.0249ms
+2026-01-16 05:22:38.635 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:22:38.637 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 24.5519ms
+2026-01-16 05:45:32.935 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 05:45:32.940 +01:00 [INF] CORS policy execution successful.
+2026-01-16 05:45:32.941 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:45:32.943 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 05:45:32.947 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 05:45:32.950 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.4869ms.
+2026-01-16 05:45:32.953 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 05:45:32.956 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 8.893ms
+2026-01-16 05:45:32.958 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:45:32.960 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 25.3332ms
+2026-01-16 05:49:05.435 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 05:49:05.440 +01:00 [INF] CORS policy execution successful.
+2026-01-16 05:49:05.442 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:49:05.444 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 05:49:05.448 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 05:49:05.451 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.6474ms.
+2026-01-16 05:49:05.454 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 05:49:05.456 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 8.7672ms
+2026-01-16 05:49:05.459 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:49:05.461 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 26.3474ms
+2026-01-16 05:51:25.703 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 05:51:25.708 +01:00 [INF] CORS policy execution successful.
+2026-01-16 05:51:25.709 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:51:25.711 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 05:51:25.715 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 05:51:25.718 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.5695ms.
+2026-01-16 05:51:25.720 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 05:51:25.723 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 8.5576ms
+2026-01-16 05:51:25.725 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:51:25.727 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 24.4328ms
+2026-01-16 05:55:10.417 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 05:55:10.423 +01:00 [INF] CORS policy execution successful.
+2026-01-16 05:55:10.424 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:55:10.426 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 05:55:10.431 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 05:55:10.433 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.4769ms.
+2026-01-16 05:55:10.437 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 05:55:10.439 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 8.7025ms
+2026-01-16 05:55:10.441 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 05:55:10.443 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 25.7249ms
+2026-01-16 06:01:51.896 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:01:51.901 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:01:51.903 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:01:51.905 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:01:51.909 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:01:51.912 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.6024ms.
+2026-01-16 06:01:51.915 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:01:51.918 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 9.4106ms
+2026-01-16 06:01:51.921 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:01:51.923 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 26.1375ms
+2026-01-16 06:02:51.260 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:02:51.264 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:02:51.266 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:02:51.268 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:02:51.271 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:02:51.273 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.3947ms.
+2026-01-16 06:02:51.276 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:02:51.279 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 8.8013ms
+2026-01-16 06:02:51.282 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:02:51.284 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 24.4329ms
+2026-01-16 06:03:12.510 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:03:12.514 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:03:12.516 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:03:12.518 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:03:12.521 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:03:12.523 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.3766ms.
+2026-01-16 06:03:12.526 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:03:12.528 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 7.4837ms
+2026-01-16 06:03:12.530 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:03:12.532 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 22.3741ms
+2026-01-16 06:04:43.355 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:04:43.360 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:04:43.362 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:04:43.365 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:04:43.368 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:04:43.371 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.3481ms.
+2026-01-16 06:04:43.373 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:04:43.376 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 7.625ms
+2026-01-16 06:04:43.378 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:04:43.380 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 24.8118ms
+2026-01-16 06:04:45.440 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:04:45.445 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:04:45.446 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:04:45.448 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:04:45.451 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:04:45.453 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.4198ms.
+2026-01-16 06:04:45.455 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:04:45.457 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 6.7421ms
+2026-01-16 06:04:45.460 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:04:45.461 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 20.832ms
+2026-01-16 06:06:49.963 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:06:49.967 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:06:49.969 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:06:49.971 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:06:49.974 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:06:49.976 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.4606ms.
+2026-01-16 06:06:49.979 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:06:49.982 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 8.1926ms
+2026-01-16 06:06:49.984 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:06:49.986 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 22.9997ms
+2026-01-16 06:07:08.855 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:07:08.860 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:07:08.862 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:07:08.864 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:07:08.867 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:07:08.870 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.2803ms.
+2026-01-16 06:07:08.873 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:07:08.875 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 8.1798ms
+2026-01-16 06:07:08.878 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:07:08.881 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 25.3534ms
+2026-01-16 06:07:42.117 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:07:42.122 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:07:42.124 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:07:42.125 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:07:42.129 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:07:42.131 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.4543ms.
+2026-01-16 06:07:42.134 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:07:42.136 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 8.0765ms
+2026-01-16 06:07:42.139 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:07:42.141 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 23.6743ms
+2026-01-16 06:21:51.859 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:21:51.864 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:21:51.866 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:21:51.868 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:21:51.872 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:21:51.875 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.5415ms.
+2026-01-16 06:21:51.879 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:21:51.882 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 10.0755ms
+2026-01-16 06:21:51.885 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:21:51.887 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 28.1071ms
+2026-01-16 06:22:49.407 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:22:49.412 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:22:49.413 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:22:49.415 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:22:49.418 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:22:49.421 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.6416ms.
+2026-01-16 06:22:49.424 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:22:49.426 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 7.9647ms
+2026-01-16 06:22:49.428 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:22:49.430 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 23.0749ms
+2026-01-16 06:22:50.417 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:22:50.421 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:22:50.423 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:22:50.425 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:22:50.428 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:22:50.430 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.4708ms.
+2026-01-16 06:22:50.433 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:22:50.436 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 7.8426ms
+2026-01-16 06:22:50.438 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:22:50.440 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 22.6319ms
+2026-01-16 06:22:50.586 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:22:50.591 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:22:50.592 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:22:50.594 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:22:50.597 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:22:50.599 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.5957ms.
+2026-01-16 06:22:50.602 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:22:50.604 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 7.295ms
+2026-01-16 06:22:50.606 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:22:50.607 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 21.2846ms
+2026-01-16 06:22:50.763 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:22:50.767 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:22:50.768 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:22:50.770 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:22:50.773 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:22:50.775 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.4067ms.
+2026-01-16 06:22:50.778 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:22:50.780 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 7.4021ms
+2026-01-16 06:22:50.782 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:22:50.784 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 20.7111ms
+2026-01-16 06:22:50.947 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:22:50.951 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:22:50.953 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:22:50.954 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:22:50.958 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:22:50.960 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.3771ms.
+2026-01-16 06:22:50.962 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:22:50.964 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 7.0716ms
+2026-01-16 06:22:50.967 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:22:50.969 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 21.3202ms
+2026-01-16 06:22:51.153 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:22:51.157 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:22:51.158 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:22:51.160 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:22:51.163 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:22:51.165 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.2907ms.
+2026-01-16 06:22:51.168 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:22:51.170 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 7.2443ms
+2026-01-16 06:22:51.172 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:22:51.174 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 21.2156ms
+2026-01-16 06:22:51.774 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:22:51.778 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:22:51.779 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:22:51.781 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:22:51.784 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:22:51.786 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.2783ms.
+2026-01-16 06:22:51.789 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:22:51.791 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 7.1784ms
+2026-01-16 06:22:51.793 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:22:51.795 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 21.0224ms
+2026-01-16 06:23:12.634 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:23:12.639 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:23:12.640 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:23:12.642 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:23:12.645 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:23:12.647 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.2905ms.
+2026-01-16 06:23:12.650 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:23:12.652 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 7.403ms
+2026-01-16 06:23:12.655 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:23:12.656 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 22.0661ms
+2026-01-16 06:23:28.983 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:23:28.988 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:23:28.989 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:23:28.991 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:23:28.994 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:23:28.997 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.2747ms.
+2026-01-16 06:23:28.999 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:23:29.002 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 7.6665ms
+2026-01-16 06:23:29.004 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:23:29.006 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 22.9859ms
+2026-01-16 06:23:42.373 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:23:42.377 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:23:42.378 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:23:42.380 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:23:42.383 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:23:42.385 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.4029ms.
+2026-01-16 06:23:42.388 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:23:42.390 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 7.3994ms
+2026-01-16 06:23:42.393 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:23:42.394 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 21.4863ms
+2026-01-16 06:23:42.543 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:23:42.547 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:23:42.549 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:23:42.550 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:23:42.554 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:23:42.556 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.3336ms.
+2026-01-16 06:23:42.559 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:23:42.561 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 7.1475ms
+2026-01-16 06:23:42.563 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:23:42.565 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 21.2324ms
+2026-01-16 06:23:42.690 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:23:42.694 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:23:42.695 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:23:42.697 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:23:42.700 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:23:42.702 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.2629ms.
+2026-01-16 06:23:42.705 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:23:42.707 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 7.1352ms
+2026-01-16 06:23:42.710 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:23:42.711 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 21.1231ms
+2026-01-16 06:23:52.530 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:23:52.534 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:23:52.536 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:23:52.538 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:23:52.541 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:23:52.543 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.3835ms.
+2026-01-16 06:23:52.546 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:23:52.549 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 7.5086ms
+2026-01-16 06:23:52.551 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:23:52.552 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 21.8071ms
+2026-01-16 06:23:52.666 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:23:52.671 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:23:52.672 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:23:52.673 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:23:52.676 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:23:52.679 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.4688ms.
+2026-01-16 06:23:52.682 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:23:52.684 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 7.7002ms
+2026-01-16 06:23:52.686 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:23:52.688 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 21.7837ms
+2026-01-16 06:23:52.832 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:23:52.837 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:23:52.838 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:23:52.840 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:23:52.843 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:23:52.845 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.3343ms.
+2026-01-16 06:23:52.848 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:23:52.850 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 7.4831ms
+2026-01-16 06:23:52.853 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:23:52.854 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 22.0051ms
+2026-01-16 06:23:53.013 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:23:53.017 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:23:53.018 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:23:53.020 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:23:53.024 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:23:53.026 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.3027ms.
+2026-01-16 06:23:53.029 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:23:53.031 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 7.7652ms
+2026-01-16 06:23:53.034 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:23:53.035 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 22.3969ms
+2026-01-16 06:26:20.434 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:26:20.440 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:26:20.441 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:26:20.443 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:26:20.447 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:26:20.450 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.4729ms.
+2026-01-16 06:26:20.453 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:26:20.455 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 8.4728ms
+2026-01-16 06:26:20.458 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:26:20.460 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 25.091ms
+2026-01-16 06:32:46.464 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:32:46.469 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:32:46.471 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:32:46.474 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:32:46.477 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:32:46.480 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.4399ms.
+2026-01-16 06:32:46.483 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:32:46.486 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 8.8399ms
+2026-01-16 06:32:46.489 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:32:46.491 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 27.4338ms
+2026-01-16 06:35:55.236 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:35:55.241 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:35:55.242 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:35:55.244 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:35:55.248 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:35:55.251 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.3051ms.
+2026-01-16 06:35:55.253 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:35:55.256 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 8.1704ms
+2026-01-16 06:35:55.258 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:35:55.260 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 23.4292ms
+2026-01-16 06:35:55.441 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:35:55.446 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:35:55.448 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:35:55.450 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:35:55.454 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:35:55.456 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.2535ms.
+2026-01-16 06:35:55.459 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:35:55.462 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 8.1256ms
+2026-01-16 06:35:55.465 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:35:55.467 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 25.6009ms
+2026-01-16 06:36:22.866 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:36:22.870 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:36:22.871 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:36:22.873 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:36:22.876 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:36:22.878 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.297ms.
+2026-01-16 06:36:22.881 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:36:22.884 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 7.8496ms
+2026-01-16 06:36:22.886 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:36:22.888 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 22.1865ms
+2026-01-16 06:37:50.327 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:37:50.331 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:37:50.333 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:37:50.334 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:37:50.338 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:37:50.340 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.4026ms.
+2026-01-16 06:37:50.344 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:37:50.346 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 8.2488ms
+2026-01-16 06:37:50.348 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:37:50.350 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 23.6614ms
+2026-01-16 06:37:50.644 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:37:50.648 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:37:50.650 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:37:50.651 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:37:50.654 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:37:50.656 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.2588ms.
+2026-01-16 06:37:50.659 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:37:50.662 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 7.4388ms
+2026-01-16 06:37:50.664 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:37:50.666 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 21.874ms
+2026-01-16 06:38:05.303 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:38:05.308 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:38:05.309 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:38:05.311 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:38:05.315 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:38:05.318 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.2737ms.
+2026-01-16 06:38:05.321 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:38:05.323 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 8.527ms
+2026-01-16 06:38:05.326 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:38:05.328 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 24.4733ms
+2026-01-16 06:38:21.234 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:38:21.239 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:38:21.241 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:38:21.243 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:38:21.246 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:38:21.248 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.3087ms.
+2026-01-16 06:38:21.250 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:38:21.253 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 7.5663ms
+2026-01-16 06:38:21.255 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:38:21.257 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 22.9699ms
+2026-01-16 06:40:16.639 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:40:16.643 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:40:16.645 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:40:16.646 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:40:16.650 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:40:16.652 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.294ms.
+2026-01-16 06:40:16.655 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:40:16.658 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 8.1549ms
+2026-01-16 06:40:16.660 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:40:16.662 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 23.514ms
+2026-01-16 06:41:57.695 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:41:57.700 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:41:57.701 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:41:57.703 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:41:57.707 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:41:57.710 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.3766ms.
+2026-01-16 06:41:57.713 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:41:57.715 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 8.2482ms
+2026-01-16 06:41:57.718 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:41:57.720 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 24.8043ms
+2026-01-16 06:42:18.749 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:42:18.754 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:42:18.756 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:42:18.758 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:42:18.761 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:42:18.763 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.2882ms.
+2026-01-16 06:42:18.766 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:42:18.769 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 8.0794ms
+2026-01-16 06:42:18.771 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:42:18.773 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 24.0764ms
+2026-01-16 06:45:31.721 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:45:31.726 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:45:31.728 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:45:31.730 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:45:31.733 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:45:31.736 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.4013ms.
+2026-01-16 06:45:31.739 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:45:31.742 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 9.2286ms
+2026-01-16 06:45:31.745 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:45:31.747 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 26.033ms
+2026-01-16 06:45:33.735 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:45:33.739 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:45:33.741 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:45:33.743 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:45:33.748 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:45:33.751 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.3413ms.
+2026-01-16 06:45:33.754 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:45:33.757 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 9.2813ms
+2026-01-16 06:45:33.760 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:45:33.762 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 26.4874ms
+2026-01-16 06:45:36.451 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:45:36.455 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:45:36.456 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:45:36.458 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:45:36.461 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:45:36.464 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.4237ms.
+2026-01-16 06:45:36.466 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:45:36.468 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 7.5825ms
+2026-01-16 06:45:36.471 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:45:36.472 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 21.6487ms
+2026-01-16 06:45:38.039 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:45:38.043 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:45:38.044 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:45:38.046 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:45:38.049 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:45:38.051 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.3284ms.
+2026-01-16 06:45:38.054 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:45:38.056 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 7.0716ms
+2026-01-16 06:45:38.058 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:45:38.060 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 21.119ms
+2026-01-16 06:45:40.023 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:45:40.027 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:45:40.028 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:45:40.030 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:45:40.033 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:45:40.035 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.2926ms.
+2026-01-16 06:45:40.038 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:45:40.039 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 6.4809ms
+2026-01-16 06:45:40.044 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:45:40.047 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 24.503ms
+2026-01-16 06:45:42.497 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:45:42.500 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:45:42.502 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:45:42.503 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:45:42.506 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:45:42.508 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.2652ms.
+2026-01-16 06:45:42.511 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:45:42.514 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 7.3097ms
+2026-01-16 06:45:42.516 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:45:42.517 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 20.539ms
+2026-01-16 06:47:46.228 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:47:46.233 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:47:46.235 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:47:46.236 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:47:46.240 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:47:46.242 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.3156ms.
+2026-01-16 06:47:46.245 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:47:46.247 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 7.3016ms
+2026-01-16 06:47:46.249 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:47:46.251 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 22.1808ms
+2026-01-16 06:49:44.692 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:49:44.697 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:49:44.698 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:49:44.700 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:49:44.703 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:49:44.706 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.2909ms.
+2026-01-16 06:49:44.708 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:49:44.710 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 7.0542ms
+2026-01-16 06:49:44.712 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:49:44.714 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 21.6174ms
+2026-01-16 06:54:05.925 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:54:05.930 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:54:05.931 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:54:05.933 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:54:05.936 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:54:05.938 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.2259ms.
+2026-01-16 06:54:05.941 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:54:05.943 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 7.5639ms
+2026-01-16 06:54:05.946 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:54:05.948 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 22.7184ms
+2026-01-16 06:55:51.657 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:55:51.662 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:55:51.663 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:55:51.665 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:55:51.668 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:55:51.671 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.2886ms.
+2026-01-16 06:55:51.673 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:55:51.675 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 6.9389ms
+2026-01-16 06:55:51.677 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:55:51.679 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 22.0376ms
+2026-01-16 06:56:17.165 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - null null
+2026-01-16 06:56:17.170 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:56:17.171 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:56:17.173 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:56:17.177 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:56:17.179 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.3769ms.
+2026-01-16 06:56:17.182 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-16 06:56:17.184 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 7.2986ms
+2026-01-16 06:56:17.186 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-16 06:56:17.188 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c/detailed - 200 null application/json; charset=utf-8 23.1507ms
+2026-01-16 06:56:22.645 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:56:22.649 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:56:22.650 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:56:22.652 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:56:22.655 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:56:22.657 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.2249ms.
+2026-01-16 06:56:22.660 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:56:22.662 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 6.9049ms
+2026-01-16 06:56:22.664 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:56:22.665 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 20.7137ms
+2026-01-16 06:56:29.945 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c - null null
+2026-01-16 06:56:29.949 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:56:29.950 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c - 204 null null 5.7183ms
+2026-01-16 06:56:29.956 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c - null null
+2026-01-16 06:56:29.960 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:56:29.962 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.DeleteDeviceByGuid (Devices.Api)'
+2026-01-16 06:56:29.967 +01:00 [INF] Route matched with {action = "DeleteDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:56:29.970 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.DeleteDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:56:30.004 +01:00 [INF] Saved 1 entities to in-memory store.
+2026-01-16 06:56:30.009 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.DeleteDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 36.6141ms.
+2026-01-16 06:56:30.012 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-01-16 06:56:30.013 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.DeleteDeviceByGuid (Devices.Api) in 43.5314ms
+2026-01-16 06:56:30.016 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.DeleteDeviceByGuid (Devices.Api)'
+2026-01-16 06:56:30.018 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5280/api/devices/24fb66c3-b989-4dc6-a19c-7c8d7060ec4c - 204 null null 61.9953ms
+2026-01-16 06:56:30.024 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:56:30.029 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:56:30.030 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:56:30.032 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:56:30.035 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:56:30.038 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.2147ms.
+2026-01-16 06:56:30.041 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:56:30.044 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 8.5285ms
+2026-01-16 06:56:30.047 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:56:30.048 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 24.3598ms
+2026-01-16 06:56:32.015 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5280/api/devices/65add83e-3adf-4aed-a4cc-43356ba42e38 - null null
+2026-01-16 06:56:32.019 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:56:32.021 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5280/api/devices/65add83e-3adf-4aed-a4cc-43356ba42e38 - 204 null null 5.9482ms
+2026-01-16 06:56:32.026 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5280/api/devices/65add83e-3adf-4aed-a4cc-43356ba42e38 - null null
+2026-01-16 06:56:32.030 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:56:32.031 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.DeleteDeviceByGuid (Devices.Api)'
+2026-01-16 06:56:32.033 +01:00 [INF] Route matched with {action = "DeleteDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:56:32.036 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.DeleteDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:56:32.039 +01:00 [INF] Saved 1 entities to in-memory store.
+2026-01-16 06:56:32.041 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.DeleteDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 3.0911ms.
+2026-01-16 06:56:32.044 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-01-16 06:56:32.046 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.DeleteDeviceByGuid (Devices.Api) in 9.8179ms
+2026-01-16 06:56:32.048 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.DeleteDeviceByGuid (Devices.Api)'
+2026-01-16 06:56:32.049 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5280/api/devices/65add83e-3adf-4aed-a4cc-43356ba42e38 - 204 null null 22.7827ms
+2026-01-16 06:56:32.054 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:56:32.058 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:56:32.059 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:56:32.061 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:56:32.063 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:56:32.065 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.1956ms.
+2026-01-16 06:56:32.068 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:56:32.070 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 6.7154ms
+2026-01-16 06:56:32.072 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:56:32.074 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 19.877ms
+2026-01-16 06:56:33.953 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:56:33.958 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:56:33.959 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:56:33.961 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:56:33.964 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:56:33.966 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.2312ms.
+2026-01-16 06:56:33.969 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:56:33.972 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 7.7736ms
+2026-01-16 06:56:33.974 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:56:33.975 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 22.0312ms
+2026-01-16 06:56:34.201 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:56:34.205 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:56:34.206 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:56:34.208 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:56:34.212 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:56:34.214 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.1844ms.
+2026-01-16 06:56:34.216 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:56:34.219 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 7.2529ms
+2026-01-16 06:56:34.221 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:56:34.223 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 22.3358ms
+2026-01-16 06:56:40.512 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5280/api/devices - null null
+2026-01-16 06:56:40.517 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:56:40.519 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5280/api/devices - 204 null null 6.5642ms
+2026-01-16 06:56:40.538 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5280/api/devices - application/json 1313
+2026-01-16 06:56:40.544 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:56:40.545 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.CreateDevices (Devices.Api)'
+2026-01-16 06:56:40.547 +01:00 [INF] Route matched with {action = "CreateDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] CreateDevices(System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.CreateDeviceDto]) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:56:40.551 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.CreateDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:56:40.554 +01:00 [INF] Saved 4 entities to in-memory store.
+2026-01-16 06:56:40.557 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.CreateDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.CreatedResult in 2.9331ms.
+2026-01-16 06:56:40.559 +01:00 [INF] Executing CreatedResult, writing value of type 'Devices.Api.ResponseWrapper.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-16 06:56:40.562 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.CreateDevices (Devices.Api) in 11.3425ms
+2026-01-16 06:56:40.564 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.CreateDevices (Devices.Api)'
+2026-01-16 06:56:40.566 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5280/api/devices - 201 null application/json; charset=utf-8 27.4359ms
+2026-01-16 06:56:40.571 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 06:56:40.575 +01:00 [INF] CORS policy execution successful.
+2026-01-16 06:56:40.576 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:56:40.578 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 06:56:40.581 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 06:56:40.583 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.238ms.
+2026-01-16 06:56:40.586 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 06:56:40.588 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 7.4533ms
+2026-01-16 06:56:40.591 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 06:56:40.592 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 21.1934ms
+2026-01-16 07:06:53.150 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-16 07:06:53.155 +01:00 [INF] CORS policy execution successful.
+2026-01-16 07:06:53.157 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 07:06:53.159 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-16 07:06:53.162 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-16 07:06:53.165 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.3607ms.
+2026-01-16 07:06:53.168 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-16 07:06:53.171 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 9.1642ms
+2026-01-16 07:06:53.173 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-16 07:06:53.175 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 25.1327ms
