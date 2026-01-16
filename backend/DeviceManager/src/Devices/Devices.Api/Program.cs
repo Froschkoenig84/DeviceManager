@@ -15,6 +15,13 @@ Log.Logger = new LoggerConfiguration()
     .CreateLogger();
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngular",
+        policy => policy.WithOrigins("http://localhost:4200")
+            .AllowAnyMethod()
+            .AllowAnyHeader());
+});
 builder.Host.UseSerilog();
 builder.Services.AddControllersWithValidationResponseWrapper();
 //swagger
@@ -36,6 +43,7 @@ if (app.Environment.IsDevelopment())
 }
 app.UseHttpsRedirection();
 app.UseAuthorization();
+app.UseCors("AllowAngular");
 app.MapControllers();
 
 app.Run();
