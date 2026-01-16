@@ -1,1 +1,44 @@
-<p>device-detail works!</p>
+<div class="device-details-wrapper" *ngIf="device">
+    <div class="header-flex-container">
+      <h1 class="device-title">{{ device.name }}</h1>
+      <span class="device-type-label">{{ device.deviceTypeId }}</span>
+      <button class="btn btn-outline-dark btn-sm back-button" routerLink="../">
+        << Zurück
+      </button>
+    </div>
+
+  <table class="industrial-spec-table">
+    <thead>
+    <tr class="table-header-row">
+      <th class="col-80"></th>
+      <th class="col-20"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="zebra">
+      <td class="label-cell">Failsafe</td>
+      <td class="value-cell">{{ device.failsafe ? 'Ja' : 'Nein' }}</td>
+    </tr>
+    <tr>
+      <td class="label-cell">Temperatur</td>
+      <td class="value-cell">{{ device.tempMin }} - {{ device.tempMax }}°C</td>
+    </tr>
+    <tr class="zebra">
+      <td class="label-cell">Einbauposition</td>
+      <td class="value-cell">{{ device.installationPosition === 'vertical' ? 'Vertikal' : 'Horizontal' }}</td>
+    </tr>
+    <tr>
+      <td class="label-cell">Geeignet für 19" Schrank</td>
+      <td class="value-cell">{{ device.insertInto19InchCabinet ? 'Ja' : 'Nein' }}</td>
+    </tr>
+    <tr class="zebra">
+      <td class="label-cell">Terminal vorhanden</td>
+      <td class="value-cell">{{ device.terminalElement ? 'Ja' : 'Nein' }}</td>
+    </tr>
+    <tr>
+      <td class="label-cell">Erweiterte Umgebungsbedingungen</td>
+      <td class="value-cell">{{ device.advancedEnvironmentalConditions ? 'Ja' : 'Nein' }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

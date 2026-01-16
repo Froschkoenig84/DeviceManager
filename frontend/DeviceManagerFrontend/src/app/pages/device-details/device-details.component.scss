@@ -1,27 +1,63 @@
-.device-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
+.device-details-wrapper {
+  margin-top: 1.5rem;
+  width: 100%;
+  position: relative;
 
-.device-card {
-  background: #ffffff;
-  border: 1px solid #dcdcdc;
-  border-top: 4px solid #005a8d; // Der blaue Akzent
-  border-radius: 2px; // Eher kantig wirkt technischer
-  padding: 15px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+    .header-flex-container {
+      display: flex;
+      align-items: flex-start;
 
-  h3 {
-    margin: 0 0 10px 0;
-    color: #005a8d;
-    font-size: 1.1rem;
+      .device-title {
+        font-size: 3rem;
+        color: #33475b;
+        margin: 0.5rem;
+        font-weight: bold;
+      }
+
+      .device-type-label {
+        margin-top: 2.25rem;
+        margin-left: 0.5rem;
+        color: darkgrey;
+        font-size: 1.25rem;
+      }
+
+      .back-button {
+        margin-left: auto;
+        margin-top: 2.25rem;
+      }
+    }
   }
 
-  .meta-info {
-    font-size: 0.85rem;
-    color: #666;
-    margin-bottom: 15px;
+  .industrial-spec-table {
+    width: 100%;
+    border: 2px solid black; // NUR der Außenrahmen
+    border-collapse: collapse;
+    background-color: white;
+
+    th, td {
+      padding: 12px;
+      border: none; // Zuerst alle Linien weg
+    }
+
+    // Hier wird NUR die vertikale Trennung gemalt
+    .label-cell {
+      width: 80%;
+      font-weight: bold;
+      border-right: 2px solid black;
+    }
+
+    .value-cell {
+      width: 20%;
+    }
+
+    // Zebra für die Optik bleibt, aber ohne Linien dazwischen
+    tr.zebra {
+      background-color: #f2f2f2;
+    }
+
+    // Der Header-Balken oben (falls du ihn behalten willst, sonst weglassen)
+    thead .table-header-row {
+      background-color: #AAA;
+      th { border-right: 2px solid black; }
+    }
   }
-}
