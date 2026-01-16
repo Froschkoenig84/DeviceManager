@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Wesley';
+  src: url('./assets/fonts/Wesley.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lavi';
+  src: url('./assets/fonts/lavi.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Glyphter';
+  src: url('./assets/fonts/glyphter.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}

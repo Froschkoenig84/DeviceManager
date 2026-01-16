@@ -1,7 +1,6 @@
 .device-details-wrapper {
-  margin-top: 1.5rem;
-  width: 100%;
-  position: relative;
+  margin: 1.5rem auto 0 auto;
+  width: 90%;
 
     .header-flex-container {
       display: flex;
@@ -22,27 +21,29 @@
       }
 
       .back-button {
-        margin-left: auto;
-        margin-top: 2.25rem;
+        margin: 2.25rem 0 0 auto;
+
+        text {
+          font-family: 'Wesley', sans-serif;
+          font-size: 1.5rem;
+        }
       }
     }
   }
 
   .industrial-spec-table {
     width: 100%;
-    border: 2px solid black; // NUR der Außenrahmen
+    border: 2px solid black;
     border-collapse: collapse;
     background-color: white;
 
     th, td {
       padding: 12px;
-      border: none; // Zuerst alle Linien weg
+      border: none;
     }
 
-    // Hier wird NUR die vertikale Trennung gemalt
     .label-cell {
       width: 80%;
-      font-weight: bold;
       border-right: 2px solid black;
     }
 
@@ -50,14 +51,16 @@
       width: 20%;
     }
 
-    // Zebra für die Optik bleibt, aber ohne Linien dazwischen
     tr.zebra {
       background-color: #f2f2f2;
     }
 
-    // Der Header-Balken oben (falls du ihn behalten willst, sonst weglassen)
     thead .table-header-row {
       background-color: #AAA;
       th { border-right: 2px solid black; }
     }
   }
+
+:host {
+  font-family: 'Lavi', sans-serif;
+}

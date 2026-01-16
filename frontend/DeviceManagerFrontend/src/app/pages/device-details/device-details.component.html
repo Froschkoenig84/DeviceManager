@@ -2,9 +2,28 @@
     <div class="header-flex-container">
       <h1 class="device-title">{{ device.name }}</h1>
       <span class="device-type-label">{{ device.deviceTypeId }}</span>
-      <button class="btn btn-outline-dark btn-sm back-button" routerLink="../">
-        << Zurück
-      </button>
+        <button routerLink="../" class="back-button" style="border:none; background:transparent;" aria-label="Zurück">
+          <svg width="90" height="30" viewBox="0 0 120 50" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7,7 L45,5 L85,6 L117,9 L119,14 L117,37 L113,44 L75,46 L35,44 L9,46 L5,40 L7,7"
+                  fill="#1a1a1a"
+                  transform="translate(3, 3)" />
+
+            <path d="M5,5 L45,3 L85,4 L115,7 L118,12 L116,35 L112,42 L75,44 L35,42 L8,44 L4,38 L6,5"
+                  fill="white"
+                  stroke="black"
+                  stroke-width="2" />
+
+            <text x="50%" y="55%"
+                  dominant-baseline="middle"
+                  text-anchor="middle"
+                  font-family="Arial, sans-serif"
+                  font-weight="bold"
+                  font-size="14"
+                  fill="black">
+              &lt;&lt; Zurück
+              &nbsp;    </text>
+          </svg>
+        </button>
     </div>
 
   <table class="industrial-spec-table">
