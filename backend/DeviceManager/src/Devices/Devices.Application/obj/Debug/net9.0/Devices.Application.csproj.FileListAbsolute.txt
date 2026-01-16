@@ -1,0 +1,16 @@
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Application\bin\Debug\net9.0\Devices.Application.deps.json
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Application\bin\Debug\net9.0\Devices.Application.dll
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Application\bin\Debug\net9.0\Devices.Application.pdb
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Application\bin\Debug\net9.0\Devices.Domain.dll
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Application\bin\Debug\net9.0\Devices.Domain.pdb
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Application\obj\Debug\net9.0\Devices.Application.csproj.AssemblyReference.cache
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Application\obj\Debug\net9.0\Devices.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Application\obj\Debug\net9.0\Devices.Application.AssemblyInfoInputs.cache
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Application\obj\Debug\net9.0\Devices.Application.AssemblyInfo.cs
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Application\obj\Debug\net9.0\Devices.Application.csproj.CoreCompileInputs.cache
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Application\obj\Debug\net9.0\Devices.Application.sourcelink.json
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Application\obj\Debug\net9.0\Devices..50421DED.Up2Date
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Application\obj\Debug\net9.0\Devices.Application.dll
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Application\obj\Debug\net9.0\refint\Devices.Application.dll
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Application\obj\Debug\net9.0\Devices.Application.pdb
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Application\obj\Debug\net9.0\ref\Devices.Application.dll

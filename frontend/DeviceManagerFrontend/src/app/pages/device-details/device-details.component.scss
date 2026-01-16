@@ -1,0 +1,27 @@
+.device-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.device-card {
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-top: 4px solid #005a8d; // Der blaue Akzent
+  border-radius: 2px; // Eher kantig wirkt technischer
+  padding: 15px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+
+  h3 {
+    margin: 0 0 10px 0;
+    color: #005a8d;
+    font-size: 1.1rem;
+  }
+
+  .meta-info {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+}

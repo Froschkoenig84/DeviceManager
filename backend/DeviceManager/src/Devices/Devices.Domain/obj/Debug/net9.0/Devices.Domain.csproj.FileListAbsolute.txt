@@ -1,0 +1,12 @@
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Domain\bin\Debug\net9.0\Devices.Domain.deps.json
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Domain\bin\Debug\net9.0\Devices.Domain.dll
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Domain\bin\Debug\net9.0\Devices.Domain.pdb
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Domain\obj\Debug\net9.0\Devices.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Domain\obj\Debug\net9.0\Devices.Domain.AssemblyInfoInputs.cache
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Domain\obj\Debug\net9.0\Devices.Domain.AssemblyInfo.cs
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Domain\obj\Debug\net9.0\Devices.Domain.csproj.CoreCompileInputs.cache
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Domain\obj\Debug\net9.0\Devices.Domain.sourcelink.json
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Domain\obj\Debug\net9.0\Devices.Domain.dll
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Domain\obj\Debug\net9.0\refint\Devices.Domain.dll
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Domain\obj\Debug\net9.0\Devices.Domain.pdb
+D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Domain\obj\Debug\net9.0\ref\Devices.Domain.dll

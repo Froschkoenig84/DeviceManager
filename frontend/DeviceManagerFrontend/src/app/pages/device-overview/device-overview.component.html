@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="action-bar">
+    <h2>Device Overview</h2>
+
+    <div class="upload-zone">
+      <input type="file" #fileInput (change)="handleJsonUpload($event)" accept=".json" hidden>
+      <button class="btn-upload" (click)="fileInput.click()">
+        <i>📁</i> JSON Importieren
+      </button>
+    </div>
+  </div>
+
+  <div class="device-grid">
+    <div *ngFor="let device of devices" class="device-card" [routerLink]="['/device', device.guid]">
+      <button class="btn-delete" (click)="removeDevice(device.guid!, $event)">✕</button>
+
+      <h3>{{ device.name }}</h3>
+      <span class="type-badge">{{ device.deviceTypeId }}</span>
+
+      <div class="status">
+        <span [style.color]="device.failsafe ? '#28a745' : '#6c757d'">
+          ● {{ device.failsafe ? 'Failsafe Aktiv' : 'Standard' }}
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="devices.length === 0" style="text-align: center; margin-top: 4rem; color: #6c757d;">
+    <p>Keine Geräte vorhanden. Importiere eine JSON-Datei, um zu starten.</p>
+  </div>
+</div>
