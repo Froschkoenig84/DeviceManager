@@ -1,76 +1,31 @@
 ﻿import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Device } from '../models/device.model';
 
-// DTO für Geräteübersicht
-export interface DeviceOverviewDto {
-  metaId: string;       // interne GUID vom Backend
-  name: string;
-  failsafe: boolean;
-  deviceTypeId: string;
-}
-
-// DTO für Detailansicht
-export interface DeviceDetailDto extends DeviceOverviewDto {
-  tempMin: number;
-  tempMax: number;
-  installationPosition: string;
-  insertInto19InchCabinet: boolean;
-  terminalElement?: boolean;
-  advancedEnvironmentalConditions?: boolean;
-}
-
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({ providedIn: 'root' })
 export class DeviceService {
-  private baseUrl = 'http://localhost:5280/api/devices';
+  private apiUrl = 'http://localhost:5280/api/devices';
 
   constructor(private http: HttpClient) {}
 
-  // Alle Geräte für Übersicht
-  getAllOverviewDevices(): Observable<DeviceOverviewDto[]> {
-    return this.http.get<DeviceOverviewDto[]>(`${this.baseUrl}/overview`);
+  // [GET] devices/overview
+  getOverviewDevices(): Observable<Device[]> {
+    return this.http.get<Device[]>(`${this.apiUrl}/overview`);
   }
 
-  // Gerätedetails für Detailansicht
-  getDetailedDevice(metaId: string): Observable<DeviceDetailDto> {
-    return this.http.get<DeviceDetailDto>(`${this.baseUrl}/${metaId}`);
+  // [GET] devices/{guid}/detailed
+  getDetailedDeviceByGuid(guid: string): Observable<Device> {
+    return this.http.get<Device>(`${this.apiUrl}/${guid}/detailed`);
   }
 
-  // Gerät löschen
-  deleteDevice(metaId: string): Observable<void> {
-    return this.http.delete<void>(`${this.baseUrl}/${metaId}`);
+  // [POST] devices
+  createDevices(payload: any[]): Observable<any> {
+    return this.http.post<any>(this.apiUrl, payload);
   }
 
-  // Daten an Backend senden
-  createDevices(devices: DeviceOverviewDto[]): Observable<void> {
-    return this.http.post<void>(`${this.baseUrl}`, devices);
-  }
-
-  // Lokale Datei vom Client einlesen, validieren und dann createDevices() aufrufen
-  uploadDevices(file: File): Observable<void> {
-    return new Observable<void>(observer => {
-      const reader = new FileReader();
-      reader.onload = () => {
-        try {
-          const json = JSON.parse(reader.result as string);
-          if (!json.devices || !Array.isArray(json.devices)) {
-            throw new Error('Ungültige Datei: "devices" fehlt oder ist kein Array');
-          }
-          this.createDevices(json.devices).subscribe({
-            next: () => {
-              observer.next();
-              observer.complete();
-            },
-            error: err => observer.error(err)
-          });
-        } catch (err) {
-          observer.error(err);
-        }
-      };
-      reader.onerror = err => observer.error(err);
-      reader.readAsText(file);
-    });
+  // [DELETE] devices/{guid}
+  deleteDeviceByGuid(guid: string): Observable<any> {
+    return this.http.delete(`${this.apiUrl}/${guid}`);
   }
 }

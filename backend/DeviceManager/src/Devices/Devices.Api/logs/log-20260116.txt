@@ -225,3 +225,7 @@
 2026-01-16 01:42:09.619 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
 2026-01-16 01:42:09.626 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 788.5476ms
 2026-01-16 01:44:31.336 +01:00 [INF] Application is shutting down...
+2026-01-16 01:51:06.204 +01:00 [INF] Now listening on: http://localhost:5280
+2026-01-16 01:51:06.250 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-16 01:51:06.253 +01:00 [INF] Hosting environment: Development
+2026-01-16 01:51:06.254 +01:00 [INF] Content root path: D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Api

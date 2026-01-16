@@ -91,3 +91,78 @@
 2026-01-15 15:07:34.358 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
 2026-01-15 15:07:34.359 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 26.0961ms
 2026-01-15 15:07:39.363 +01:00 [INF] Application is shutting down...
+2026-01-15 15:28:52.498 +01:00 [INF] Now listening on: http://localhost:5280
+2026-01-15 15:28:52.544 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-15 15:28:52.546 +01:00 [INF] Hosting environment: Development
+2026-01-15 15:28:52.548 +01:00 [INF] Content root path: D:\WORK\GROLLMUS\PROJECTS\DeviceManager\backend\DeviceManager\src\Devices\Devices.Api
+2026-01-15 15:28:55.760 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/ - null null
+2026-01-15 15:28:55.814 +01:00 [WRN] Failed to determine the https port for redirect.
+2026-01-15 15:28:55.821 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/ - 404 0 null 70.2504ms
+2026-01-15 15:28:55.831 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5280/, Response status code: 404
+2026-01-15 15:29:02.535 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/swagger/v1/swagger.json - null null
+2026-01-15 15:29:02.655 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 120.9332ms
+2026-01-15 15:29:20.928 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5280/api/devices - application/json 1812
+2026-01-15 15:29:20.937 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.CreateDevices (Devices.Api)'
+2026-01-15 15:29:20.957 +01:00 [INF] Route matched with {action = "CreateDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] CreateDevices(System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.CreateDeviceDto]) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-15 15:29:21.192 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.CreateDevices (Devices.Api) - Validation state: "Valid"
+2026-01-15 15:29:21.651 +01:00 [INF] Saved 4 entities to in-memory store.
+2026-01-15 15:29:21.665 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.CreateDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.CreatedResult in 466.7662ms.
+2026-01-15 15:29:21.676 +01:00 [INF] Executing CreatedResult, writing value of type 'Devices.Api.ResponseWrapper.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-15 15:29:21.729 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.CreateDevices (Devices.Api) in 766.5217ms
+2026-01-15 15:29:21.732 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.CreateDevices (Devices.Api)'
+2026-01-15 15:29:21.737 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5280/api/devices - 201 null application/json; charset=utf-8 808.5668ms
+2026-01-15 15:29:37.234 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-15 15:29:37.239 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-15 15:29:37.244 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-15 15:29:37.248 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-15 15:29:37.421 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 170.5141ms.
+2026-01-15 15:29:37.425 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-15 15:29:37.434 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 186.4092ms
+2026-01-15 15:29:37.436 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-15 15:29:37.438 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 204.5805ms
+2026-01-15 15:32:44.205 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5280/api/devices/770b3e72-ecc0-4f11-a1ec-5efca740b0c9 - null null
+2026-01-15 15:32:44.210 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.DeleteDeviceByGuid (Devices.Api)'
+2026-01-15 15:32:44.216 +01:00 [INF] Route matched with {action = "DeleteDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-15 15:32:44.223 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.DeleteDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-15 15:32:44.287 +01:00 [INF] Saved 1 entities to in-memory store.
+2026-01-15 15:32:44.293 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.DeleteDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 67.3061ms.
+2026-01-15 15:32:44.296 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-01-15 15:32:44.298 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.DeleteDeviceByGuid (Devices.Api) in 78.6878ms
+2026-01-15 15:32:44.300 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.DeleteDeviceByGuid (Devices.Api)'
+2026-01-15 15:32:44.302 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5280/api/devices/770b3e72-ecc0-4f11-a1ec-5efca740b0c9 - 204 null null 97.346ms
+2026-01-15 15:32:48.045 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/overview - null null
+2026-01-15 15:32:48.050 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-15 15:32:48.052 +01:00 [INF] Route matched with {action = "GetOverviewDevices", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Devices.Application.DTOs.OverviewDeviceDto]]] GetOverviewDevices() on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-15 15:32:48.055 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) - Validation state: "Valid"
+2026-01-15 15:32:48.061 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.1187ms.
+2026-01-15 15:32:48.064 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Devices.Domain.Entities.OverviewDevice, Devices.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devices.Application.DTOs.OverviewDeviceDto, Devices.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-15 15:32:48.066 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api) in 11.0522ms
+2026-01-15 15:32:48.069 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetOverviewDevices (Devices.Api)'
+2026-01-15 15:32:48.071 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/overview - 200 null application/json; charset=utf-8 25.2154ms
+2026-01-15 15:33:04.584 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/e61ea95d-760d-4331-a828-6cc47228b769/detailed - null null
+2026-01-15 15:33:04.589 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-15 15:33:04.594 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-15 15:33:04.598 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-15 15:33:04.614 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13.3009ms.
+2026-01-15 15:33:04.617 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-15 15:33:04.622 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 24.7951ms
+2026-01-15 15:33:04.625 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-15 15:33:04.627 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/e61ea95d-760d-4331-a828-6cc47228b769/detailed - 200 null application/json; charset=utf-8 43.2661ms
+2026-01-15 15:33:06.321 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/e61ea95d-760d-4331-a828-6cc47228b769/detailed - null null
+2026-01-15 15:33:06.325 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-15 15:33:06.328 +01:00 [INF] Route matched with {action = "GetDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.DetailedDeviceDto]] GetDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-15 15:33:06.331 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-15 15:33:06.334 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.8549ms.
+2026-01-15 15:33:06.337 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.DetailedDeviceDto'.
+2026-01-15 15:33:06.339 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api) in 8.6685ms
+2026-01-15 15:33:06.342 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetDeviceByGuid (Devices.Api)'
+2026-01-15 15:33:06.344 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/e61ea95d-760d-4331-a828-6cc47228b769/detailed - 200 null application/json; charset=utf-8 23.2804ms
+2026-01-15 15:33:13.095 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/api/devices/e61ea95d-760d-4331-a828-6cc47228b769 - null null
+2026-01-15 15:33:13.100 +01:00 [INF] Executing endpoint 'Devices.Api.Controllers.DeviceController.GetFullDeviceByGuid (Devices.Api)'
+2026-01-15 15:33:13.105 +01:00 [INF] Route matched with {action = "GetFullDeviceByGuid", controller = "Device"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Devices.Application.DTOs.FullDeviceDto]] GetFullDeviceByGuid(System.Guid) on controller Devices.Api.Controllers.DeviceController (Devices.Api).
+2026-01-15 15:33:13.109 +01:00 [INF] Executing action method Devices.Api.Controllers.DeviceController.GetFullDeviceByGuid (Devices.Api) - Validation state: "Valid"
+2026-01-15 15:33:13.115 +01:00 [INF] Executed action method Devices.Api.Controllers.DeviceController.GetFullDeviceByGuid (Devices.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.5339ms.
+2026-01-15 15:33:13.118 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devices.Application.DTOs.FullDeviceDto'.
+2026-01-15 15:33:13.123 +01:00 [INF] Executed action Devices.Api.Controllers.DeviceController.GetFullDeviceByGuid (Devices.Api) in 14.0518ms
+2026-01-15 15:33:13.125 +01:00 [INF] Executed endpoint 'Devices.Api.Controllers.DeviceController.GetFullDeviceByGuid (Devices.Api)'
+2026-01-15 15:33:13.127 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/api/devices/e61ea95d-760d-4331-a828-6cc47228b769 - 200 null application/json; charset=utf-8 31.6004ms
