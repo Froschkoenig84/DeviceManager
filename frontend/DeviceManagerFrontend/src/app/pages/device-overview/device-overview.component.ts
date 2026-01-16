@@ -1,4 +1,4 @@
-﻿import { Component, OnInit } from '@angular/core';
+﻿import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common'; // Für *ngIf und *ngFor
 import { RouterModule } from '@angular/router'; // Für [routerLink]
 import { DeviceService } from '../../services/device.service';
@@ -17,15 +17,23 @@ import { Device } from '../../models/device.model';
 export class DeviceOverviewComponent implements OnInit {
   devices: Device[] = [];
 
-  constructor(private deviceService: DeviceService) {}
+  constructor(
+    private deviceService: DeviceService,
+    private cdr: ChangeDetectorRef
+  ) {}
 
   ngOnInit(): void {
+    console.log('Komponente initialisiert, lade Daten...');
     this.refreshOverview();
   }
 
   refreshOverview(): void {
     this.deviceService.getOverviewDevices().subscribe({
-      next: (data) => this.devices = data,
+      next: (data) => {
+        this.devices = data;
+        this.cdr.detectChanges();
+        console.log('UI Refresh erzwungen mit Daten:', data);
+      },
       error: (err) => console.error('Abruf fehlgeschlagen', err)
     });
   }
@@ -42,8 +50,6 @@ export class DeviceOverviewComponent implements OnInit {
         const rawContent = e.target?.result as string;
         const jsonContent = JSON.parse(rawContent);
 
-        // FIX: Wir extrahieren das Array aus dem "devices"-Property
-        // Falls das JSON direkt ein Array ist, nehmen wir das, ansonsten jsonContent.devices
         const payload = Array.isArray(jsonContent) ? jsonContent : jsonContent.devices;
 
         if (!payload) {
