@@ -1,29 +1,36 @@
-﻿import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
-import { CommonModule } from '@angular/common'; // Für *ngIf und *ngFor
-import { RouterModule } from '@angular/router'; // Für [routerLink]
+﻿import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { HealthService } from '../../services/health.service';
 import { DeviceService } from '../../services/device.service';
 import { Device } from '../../models/device.model';
+import { Observable, combineLatest, map } from 'rxjs';
 
 @Component({
   selector: 'app-device-overview',
-  standalone: true, // Sicherstellen, dass das hier steht!
+  standalone: true,
   imports: [
-    CommonModule, // Schaltet *ngIf und *ngFor frei
-    RouterModule  // Schaltet [routerLink] frei
+    CommonModule,
+    RouterModule
   ],
   templateUrl: './device-overview.component.html',
   styleUrls: ['./device-overview.component.scss']
 })
 export class DeviceOverviewComponent implements OnInit {
   devices: Device[] = [];
+  isApiAvailable: boolean = true;
 
   constructor(
     private deviceService: DeviceService,
+    private healthService: HealthService,
     private cdr: ChangeDetectorRef
   ) {}
 
   ngOnInit(): void {
-    console.log('Komponente initialisiert, lade Daten...');
+    this.healthService.status$.subscribe(status => {
+      this.isApiAvailable = status;
+      this.cdr.detectChanges();
+    });
     this.refreshOverview();
   }
 
@@ -31,10 +38,14 @@ export class DeviceOverviewComponent implements OnInit {
     this.deviceService.getOverviewDevices().subscribe({
       next: (data) => {
         this.devices = data;
+        this.isApiAvailable = true;
         this.cdr.detectChanges();
-        console.log('UI Refresh erzwungen mit Daten:', data);
       },
-      error: (err) => console.error('Abruf fehlgeschlagen', err)
+      error: (err) => {
+        console.error(err);
+        this.isApiAvailable = false;
+        this.cdr.detectChanges();
+      }
     });
   }
 
@@ -49,35 +60,36 @@ export class DeviceOverviewComponent implements OnInit {
       try {
         const rawContent = e.target?.result as string;
         const jsonContent = JSON.parse(rawContent);
-
         const payload = Array.isArray(jsonContent) ? jsonContent : jsonContent.devices;
 
-        if (!payload) {
-          throw new Error("Kein 'devices'-Array im JSON gefunden!");
-        }
+        if (!payload) throw new Error("No devices array found");
 
         this.deviceService.createDevices(payload).subscribe({
           next: () => {
             this.refreshOverview();
             input.value = '';
           },
-          error: (err) => {
-            console.error('Upload fehlgeschlagen:', err);
-            alert('Backend meldet Fehler. Evtl. GUID-Konflikt oder Format falsch?');
+          error: () => {
+            alert('Upload fehlgeschlagen.');
           }
         });
       } catch (error) {
-        alert('Fehler beim Verarbeiten der Datei: ' + error);
+        alert('Fehler: ' + error);
       }
     };
-
     reader.readAsText(file);
   }
 
   removeDevice(guid: string, event: Event): void {
     event.stopPropagation();
     if (confirm('Gerät wirklich löschen?')) {
-      this.deviceService.deleteDeviceByGuid(guid).subscribe(() => this.refreshOverview());
+      this.deviceService.deleteDeviceByGuid(guid).subscribe({
+        next: () => this.refreshOverview(),
+        error: () => {
+          this.isApiAvailable = false;
+          this.cdr.detectChanges();
+        }
+      });
     }
   }
 }

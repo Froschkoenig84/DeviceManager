@@ -2,7 +2,7 @@
   <div class="action-bar">
     <h1>Probeaufgabe - Michael Nicolai - 2026·01·16</h1>
 
-    <div class="upload-zone">
+    <div class="upload-zone" *ngIf="isApiAvailable">
       <input type="file" #fileInput (change)="handleJsonUpload($event)" accept=".json" hidden>
       <button class="btn-upload" (click)="fileInput.click()">
         <i>📁</i> JSON Importieren
@@ -10,23 +10,33 @@
     </div>
   </div>
 
-  <div class="device-grid">
-    <div *ngFor="let device of devices" class="device-card" [routerLink]="['/device', device.guid]">
-      <button class="btn-delete delete-button" title="Löschen" (click)="removeDevice(device.guid!, $event)"></button>
-
-      <h3>{{ device.name }}</h3>
-      <span class="type-badge">{{ device.deviceTypeId }}</span>
-
-      <div class="status">
-        <span [style.color]="device.failsafe ? '#229911' : '#AA2211'">
-          Failsafe: <strong>{{ device.failsafe ? '✔' : '✘' }}</strong>
-        </span>
-      </div>
+  <div *ngIf="!isApiAvailable" class="api-error-state">
+    <div class="krizzel-box">
+      <span class="glyph-icon">c</span> <h2>Verbindung unterbrochen</h2>
+      <p>Der Server schmollt. Wahrscheinlich ein CORS-Fehler oder das Backend schläft.</p>
     </div>
   </div>
 
-  <div *ngIf="devices.length === 0" style="text-align: center; margin-top: 4rem; color: #6c757d;">
-    <p>Keine Geräte vorhanden. Importiere eine JSON-Datei, um zu starten.</p>
-  </div>
-</div>
+  <ng-container *ngIf="isApiAvailable">
 
+    <div class="device-grid" *ngIf="devices.length > 0">
+      <div *ngFor="let device of devices" class="device-card" [routerLink]="['/device', device.guid]">
+        <button class="btn-delete delete-button" title="Löschen" (click)="removeDevice(device.guid!, $event)"></button>
+        <h3>{{ device.name }}</h3>
+        <span class="type-badge">{{ device.deviceTypeId }}</span>
+        <div class="status">
+          <span [style.color]="device.failsafe ? '#229911' : '#AA2211'">
+            Failsafe: <strong>{{ device.failsafe ? '✔' : '✘' }}</strong>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="devices.length === 0" class="empty-state-container">
+      <div class="empty-state-message">
+        <p>Keine Geräte vorhanden. Importiere eine JSON-Datei, um zu starten.</p>
+      </div>
+    </div>
+
+  </ng-container>
+</div>
